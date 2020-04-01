@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { FlowHomeComponent } from './flow-home/flow-home.component';
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  { path: 'flow', component: FlowHomeComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
