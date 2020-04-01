@@ -1,24 +1,23 @@
 <mat-sidenav-container class="sidebar-container">
 
-  <mat-sidenav #sidenav mode="side"  [(opened)]="opened" (opend)="events.push('open!')" (closed)="events.push('close')">
+  <mat-sidenav #sidenav mode="side" >
 
-    <a routerLink="income">Income</a>
-    <a routerLink="outcome">Outcome</a>
-    <a routerLink="flow">Flow</a>
+    <a mat-raised-button routerLink="income" class="side-button">Income</a>
+    <br />
+    <a mat-raised-button routerLink="outcome" class="side-button">Outcome</a>
+    <br />
+    <a mat-raised-button routerLink="flow" class="side-button">Flow</a>
 
   </mat-sidenav>
 
   <mat-sidenav-content>
     <p>
-      <mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox>
+      <button mat-raised-button (click)="sidenav.toggle()">sidenav.toggle()</button>
     </p>
-    <p>
-      <button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button>
-    </p>
+
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 
+
+
 </mat-sidenav-container>
-
-
-
-<router-outlet></router-outlet>

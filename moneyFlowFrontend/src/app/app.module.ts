@@ -40,7 +40,9 @@ import { FlowModule } from './flow/flow.module';
 
 
     MatSidenavModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
