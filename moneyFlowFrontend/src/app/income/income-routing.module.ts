@@ -5,7 +5,7 @@ import { IncomeHomeComponent } from './income-home/income-home.component';
 
 
 const routes: Routes = [
-  { path: 'income', component: IncomeHomeComponent }
+  { path: '', component: IncomeHomeComponent }
 ];
 
 @NgModule({

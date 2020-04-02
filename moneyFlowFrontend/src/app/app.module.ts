@@ -19,9 +19,6 @@ import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
-import { IncomeModule } from './income/income.module';
-import { OutcomeModule } from './outcome/outcome.module';
-import { FlowModule } from './flow/flow.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -34,9 +31,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    IncomeModule,
-    OutcomeModule,
-    FlowModule,
 
     AppRoutingModule,
 

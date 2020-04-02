@@ -6,7 +6,7 @@ import { OutcomeHomeComponent } from './outcome-home/outcome-home.component';
 
 const routes: Routes = [
   {
-    path:'outcome', component: OutcomeHomeComponent
+    path:'', component: OutcomeHomeComponent
   }
 ];
 

@@ -3,9 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { FlowHomeComponent } from './flow-home/flow-home.component';
 
-
 const routes: Routes = [
-  { path: 'flow', component: FlowHomeComponent }
+  { path: '', component: FlowHomeComponent }
 ];
 
 @NgModule({
