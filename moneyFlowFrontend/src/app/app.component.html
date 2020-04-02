@@ -1,13 +1,11 @@
 <mat-sidenav-container class="sidebar-container">
 
-  <mat-sidenav #sidenav mode="side" >
-
-    <a mat-raised-button routerLink="income" class="side-button">Income</a>
+  <mat-sidenav #sidenav mode="side">
+    <a mat-raised-button routerLink="income" class="side-button" routerLinkActive="active-button">Income</a>
     <br />
-    <a mat-raised-button routerLink="outcome" class="side-button">Outcome</a>
+    <a mat-raised-button routerLink="outcome" class="side-button" routerLinkActive="active-button">Outcome</a>
     <br />
-    <a mat-raised-button routerLink="flow" class="side-button">Flow</a>
-
+    <a mat-raised-button routerLink="flow" class="side-button" routerLinkActive="active-button">Flow</a>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -17,7 +15,4 @@
 
     <router-outlet></router-outlet>
   </mat-sidenav-content>
-
-
-
 </mat-sidenav-container>
