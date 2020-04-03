@@ -14,6 +14,9 @@ const routes: Routes = [
   { path: 'flow',
     loadChildren: () => 
       import('./flow/flow.module').then(m => m.FlowModule ) },
+  { path: 'saleplan',
+    loadChildren: () =>
+      import('./sale-plan/sale-plan.module').then(m => m.SalePlanModule) },
   { path:'', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];
