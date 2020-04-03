@@ -36,8 +36,28 @@ export class TableComponent implements OnInit {
     { partner: 'PromMat d.o.o.', jan: 123, feb: 456, mar: 789, apr: 963, may: 852, jun: 741 }
   ];
 
-  getTotalCost() {
+  getTotalCostJan() {
     return this.liabilites.map(t => t.jan).reduce((acc, value) => acc + value);
+  }
+
+  getTotalCostFeb(){
+    return this.liabilites.map(t => t.feb).reduce((acc, val) => acc + val);
+  }
+
+  getTotalCostMar(){
+    return this.liabilites.map(t => t.mar).reduce((acc, val) => acc + val);
+  }
+
+  getTotalCostApr(){
+    return this.liabilites.map(t => t.apr).reduce((acc, val) => acc + val);
+  }
+
+  getTotalCostMay(){
+    return this.liabilites.map(t => t.may).reduce((acc, val) => acc + val);
+  }
+
+  getTotalCostJun(){
+    return this.liabilites.map(t => t.jun).reduce((acc, val) => acc + val);
   }
 
 }

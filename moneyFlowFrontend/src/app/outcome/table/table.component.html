@@ -9,37 +9,37 @@
     <ng-container matColumnDef="jan">
         <th mat-header-cell *matHeaderCellDef>01/2015</th>
         <td mat-cell *matCellDef="let liability">{{liability.jan | currency}}</td>
-        <td mat-footer-cell *matFooterCellDef>{{getTotalCost() | currency}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{getTotalCostJan() | currency}}</td>
     </ng-container>
 
     <ng-container matColumnDef="feb">
         <th mat-header-cell *matHeaderCellDef>02/2015</th>
         <td mat-cell *matCellDef="let liability">{{liability.feb | currency}}</td>
-        <td mat-footer-cell *matFooterCellDef>{{getTotalCost() | currency}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{getTotalCostFeb() | currency}}</td>
     </ng-container>
 
     <ng-container matColumnDef="mar">
         <th mat-header-cell *matHeaderCellDef>03/2015</th>
         <td mat-cell *matCellDef="let liability">{{liability.mar | currency}}</td>
-        <td mat-footer-cell *matFooterCellDef>{{getTotalCost() | currency}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{getTotalCostMar() | currency}}</td>
     </ng-container>
 
     <ng-container matColumnDef="apr">
         <th mat-header-cell *matHeaderCellDef>04/2015</th>
         <td mat-cell *matCellDef="let liability">{{liability.apr | currency}}</td>
-        <td mat-footer-cell *matFooterCellDef>{{getTotalCost() | currency}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{getTotalCostApr() | currency}}</td>
     </ng-container>
 
     <ng-container matColumnDef="may">
         <th mat-header-cell *matHeaderCellDef>05/2015</th>
         <td mat-cell *matCellDef="let liability">{{liability.may | currency}}</td>
-        <td mat-footer-cell *matFooterCellDef>{{getTotalCost() | currency}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{getTotalCostMay() | currency}}</td>
     </ng-container>
 
     <ng-container matColumnDef="jun">
         <th mat-header-cell *matHeaderCellDef>06/2015</th>
         <td mat-cell *matCellDef="let liability">{{liability.jun | currency}}</td>
-        <td mat-footer-cell *matFooterCellDef>{{getTotalCost() | currency}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{getTotalCostJun() | currency}}</td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
